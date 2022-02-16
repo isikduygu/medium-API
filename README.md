@@ -31,7 +31,7 @@ npm run build --report
 
 ![alt text](https://github.com/dduyguu/medium-API/blob/a5b27fa911a9652df835a539834d96b75d3dc882/src/assets/demo.gif)
 
-You can access medium documentation [a link](https://medium.com/@isikduygu/how-to-dynamically-render-your-medium-blog-posts-on-your-web-site-105ed024504f)
+[You can access medium documentation](https://medium.com/@isikduygu/how-to-dynamically-render-your-medium-blog-posts-on-your-web-site-105ed024504f)
 
 
 ## Referances
