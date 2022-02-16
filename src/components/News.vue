@@ -56,7 +56,7 @@ export default {
   text-align: end;
 }
 .row-area{
-  width: 80%;
+  width: 100%;
     box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
     padding:20px;
     border-radius: 20px;
@@ -83,7 +83,6 @@ export default {
   border-bottom: 2px solid black;
 }
 img{
-  width: 50%;
   margin: auto;
   display: block;
 }

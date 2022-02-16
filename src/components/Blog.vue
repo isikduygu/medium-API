@@ -57,8 +57,7 @@ export default {
   font-size: 12px;
 }
 .image{
-  width: 25%;
-  margin-left: 50px;
+  width: 15%;
   object-fit: cover;
 }
 h3{
@@ -86,7 +85,6 @@ h3{
   width: 65%;
 }
 img{
-  width: 50%;
   margin: 0 auto;
 }
 .center{
