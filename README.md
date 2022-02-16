@@ -25,6 +25,10 @@ npm run build
 npm run build --report
 ```
 
+## Demo
+
+![alt text](https://github.com/dduyguu/medium-API/blob/main/img/demo.gif?raw=true)
+
 ## Referances
 
 - Patika.dev RestAPI
