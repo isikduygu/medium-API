@@ -36,9 +36,9 @@ npm run build --report
 
 ## Referances
 
-- Patika.dev RestAPI
-- React version
-- Vue.js documention
+- [Patika.dev RestAPI](https://app.patika.dev/moduller/rest-api)
+- [React version](https://levelup.gitconnected.com/how-to-dynamically-render-your-medium-blog-posts-on-your-portfolio-site-6b008580bd34)
+- [Vue.js documention](https://v2.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html)
 
 You can find detailed information here. I advise checking out.
 
