@@ -1,6 +1,13 @@
-# medium-project2
 
-> A Vue.js project
+# How To Dynamically Render Your Medium Blog Posts On Your Web Site?
+
+In this Vue project, You can dynamically render the posts you share on the medium to your website.
+
+
+
+
+
+
 
 ## Build Setup
 
@@ -18,4 +25,12 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Referances
+
+- Patika.dev RestAPI
+- React version
+- Vue.js documention
+
+You can find detailed information here. I advise checking out.
+
+  
