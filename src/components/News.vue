@@ -1,11 +1,11 @@
 <template>
-    <div class="container">
-        <div class="area">
-          <div class="row">
-            <h2 class="title" v-html="items.title">{{items.title}}</h2>
-           <p v-html="items.content" class="pubDescription">{{items.content}}</p>
+    <div class="container container-area">
+        <div class="content-area">
+          <div class="row row-area">
+            <h2 class="content-title" v-html="items.title">{{items.title}}</h2>
+           <p v-html="items.content" :href="items.content" class="pubDescription">{{items.content}}</p>
         <router-link to="/" class="back">Back</router-link>
-        <p class="date">{{ items.pubDate }}</p>
+        <p class="content-date">{{ items.pubDate }}</p>
         <!-- <a :href="link">Read on Medium</a> -->
       </div>
        </div>
@@ -28,10 +28,10 @@ export default {
   methods : {
      takeBlocks(){
        axios
-      .get('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40isikduygu&api_key=h7oj8jf9hhn9pjekkkylbwla02q1vq00jesik09u')
+      .get('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@isikduygu')
       .then((response) => {
        this.blockList = response.data.items
-        if(this.blockList.length >= this.index+1){
+        if(this.blockList.length >= this.index){
         this.items = this.blockList[this.index]
       }else{
         this.$router.push("/")
@@ -42,8 +42,8 @@ export default {
   },
 };
 </script>
-<style scoped>
-.container{
+<style>
+.container-area{
   margin-bottom:50px;
 }
 .back{
@@ -51,22 +51,22 @@ export default {
   color: black;
   margin: 15px;
 }
-.date{
+.content-date{
   font-size: 12px;
   text-align: end;
 }
-.row{
+.row-area{
   width: 80%;
     box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
     padding:20px;
     border-radius: 20px;
     position: relative;
 }
-.area{
+.content-area{
   display: flex;
   justify-content: center;
 }
-.title{
+.content-title{
   text-align: center;
   margin-bottom: 50px;
 }
@@ -81,5 +81,13 @@ export default {
 .back:hover{
   color: black;
   border-bottom: 2px solid black;
+}
+img{
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+a{
+  color: black;
 }
 </style>

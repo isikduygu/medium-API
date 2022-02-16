@@ -1,17 +1,20 @@
 <template>
       <div class="container">
         <div v-for="(item,index) in items" :key="index" class="area">
-            <div class="row">
+            <div class="center">
               <div class=" frame-area">
                 <p class="date">{{item.pubDate}}</p>
                 <h2 class="title">{{item.title}}</h2>
-                <div class="content-area"><p v-html="item.description" class="description">{{item.description}}</p>
-               <img :src="item.thumbnail" alt="" class="image"></div>
-                 <router-link  class="read-more" active-class="active" :to="{ name: 'news' , params: { index: index }}">Read More</router-link>
+                <div class="des-area">
+              <div class="des-content">
+                  <p v-html="item.description" class="description">{{item.description}}</p>
+                  <router-link  class="read-more" active-class="active" :to="{ name: 'news' , params: { index: index }}">Read More</router-link>
+              </div>
+               <img :src="item.thumbnail" alt="" class="image"> </div>
               </div>
             </div>
+            </div>
         </div>
-    </div>
 </template>
 
 <script>
@@ -24,10 +27,10 @@ export default {
   }},
   mounted () {
     axios
-      .get('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@{your_medium_user_name}')
+      .get('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@isikduygu')
       .then(response => console.log(this.items = response.data.items))
       .catch(error => console.log(error))
-  },
+  }
 }
 </script>
 
@@ -38,6 +41,7 @@ export default {
     border-radius: 20px;
     position: relative;
     margin-bottom: 25px;
+    width: 60%;
 }
 .read-more{
   text-decoration: none;
@@ -57,30 +61,37 @@ export default {
   margin-left: 50px;
   object-fit: cover;
 }
-.description figure{
-  display: none;
-}
-.description{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 62%;
-  line-height: 10px;
-}
 h3{
   line-height:  1.8em;
-}
-.content-area{
-  display: flex;
-}
-.row{
-  width: 80%;
 }
 .area{
   display: flex;
   justify-content: center;
 }
+.description{
+  max-height: 48px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.description figure{
+  display: none
+}
+.des-area{
+  display: flex;
+  margin-top: 45px;
+}
+.des-content{
+  width: 65%;
+}
 img{
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
+}
+.center{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 </style>
