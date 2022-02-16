@@ -27,7 +27,8 @@ npm run build --report
 
 ## Demo
 
-![alt text](https://github.com/dduyguu/medium-API/blob/main/img/demo.gif?raw=true)
+![alt text](https://github.com/dduyguu/medium-API/blob/a5b27fa911a9652df835a539834d96b75d3dc882/src/assets/demo.gif)
+
 
 ## Referances
 
