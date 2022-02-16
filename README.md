@@ -1,5 +1,7 @@
 
-# How To Dynamically Render Your Medium Blog Posts On Your Web Site?
+# Dynamic Blog Page
+
+### How To Dynamically Render Your Medium Blog Posts On Your Web Site?
 
 In this Vue project, You can dynamically render the posts you share on the medium to your website.
 
